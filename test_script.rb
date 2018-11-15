@@ -41,6 +41,7 @@ def test_script()
   File.write('Gemfile',gemfile_text)
   File.write("lib/#{file_name}.rb", lib_text)
   File.write("spec/#{file_name}_spec.rb", spec_text)
+  File.write('README.md', readme_text)
 end
 
 test_script()
