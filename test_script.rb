@@ -28,7 +28,7 @@ def test_script()
   gemfile_text = "source 'https://rubygems.org'\n\ngem 'rspec'\ngem 'pry'\ngem 'pivotal_git_scripts'\n"
   lib_text = "require 'pry'\n"
   spec_text = "require 'rspec'\nrequire '#{file_name}'"
-  readme_text = "# _{Application Name}_\n\n#### _{Description, Date}_\n\n#### By _**{People}**_\n\n## Description\n\n_{Detailed description of app}_\n\n## Setup/Installation Requirements\n\n* _Instructions_\n* _go_\n* _here_\n\n## Known Bugs\n\n_{Bugs go here}_\n\n## Support and Contact Details\n\n_{Text here}_\n\n ### License\n\nLicensed under {License here}\nCopyright (c) {year} _**{Names/Initials}**_"
+  readme_text = "# _{Application Name}_\n\n#### _{Description, Date}_\n\n#### By _**{People}**_\n\n## Description\n\n_{Detailed description of app}_\n\n## Setup/Installation Requirements\n\n* _Instructions_\n* _go_\n* _here_\n\n## Known Bugs\n\n_{Bugs go here}_\n\n## Support and Contact Details\n\n_{Text here}_\n\n### License\n\nLicensed under {License here}\nCopyright (c) {year} _**{Names/Initials}**_"
   print "We'll add gems rspec, pry, and pivotal_git_scripts to your Gemfile. Enter any additional gems you'd like to use separated by commas: "
   gems_string = gets.chomp
   if gems_string != ""
